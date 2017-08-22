@@ -1,0 +1,80 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+      <link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+      <script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+      <script language="javascript" type="text/javascript" src="custom.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="fluig-style-guide">
+         <form class="form-horizontal" name="form" role="form">
+            <div class="page-header">
+               <h1>Utilizando zoom</h1>
+            </div>
+            <div class="panel-group" id="accordion">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Dados do usuário
+                        </a>
+                     </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                     <div class="panel-body">
+                        <div class="row">
+                           <div class="form-group col-sm-12">
+                              <label for="inputEmail3" class="col-sm-4 control-label">Nome do usuário:</label>
+                              <div class="col-sm-8">
+                                 <input
+                                    type="zoom" 
+                                    id = "colleagueName"
+                                    name="colleagueName"
+                                    data-zoom="{
+										'displayKey':'colleagueName',
+										'datasetId':'colleague',
+										'fields':[
+											{
+												'field':'colleagueName',
+												'label':'Nome',
+												'standard':'true'
+											},{
+												'field':'mail',
+												'label':'Email',
+												'visible' : 'false'
+											}
+										]
+                                    }"  />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="form-group col-sm-12">
+                              <label for="inputEmail3" class="col-sm-4 control-label">E-mail do usuário:</label>
+                              <div class="col-sm-8">
+                                 <input
+                                    type="zoom" 
+                                    id = "colleagueMail"
+                                    name="colleagueMail"
+                                    data-zoom="{
+										'displayKey':'mail',
+										'datasetId':'colleague',
+										'fields':[
+											{
+												'field':'mail',
+												'label':'Email'
+											}
+										]
+                                    }"  />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

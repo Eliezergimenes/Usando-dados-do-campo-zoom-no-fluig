@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.page-header{
+	background-color: aliceblue;
+	text-align: center;
+	border-radius: 5px 5px;
+	padding: 1%;
+	color: rosybrown;
+	font-weight: bold;
+	border: 1px #000 solid;
+}
